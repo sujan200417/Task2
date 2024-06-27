@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: gainsboro;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #999;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    background-color: #3897f0;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #287bb5;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.sign-up {
+    margin-top: 20px;
+}
+
+.sign-up p {
+    margin: 0;
+}
+
+.sign-up a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}

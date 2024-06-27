@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-image: linear-gradient(to top,rgb(255, 157, 173),rgb(240, 240, 10) );
+        }
+        button{
+            background-color: red;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+   <h1 style="color: blue;">Registration form</h1>
+   <form id="registration-form">
+       <table id="registration-table" style="width: 50%;">
+           <tr>
+               <td>First name</td>
+               <td>
+                   <input type="text" id="first-name" size="90%">
+                   <span class="error" id="first-name-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Last name</td>
+               <td>
+                   <input type="text" id="last-name" size="90%">
+                   <span class="error" id="last-name-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Email</td>
+               <td>
+                   <input type="text" id="email" size="90%">
+                   <span class="error" id="email-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Password</td>
+               <td>
+                   <input type="password" id="password" size="90%">
+                   <span class="error" id="password-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Re-enter password</td>
+               <td>
+                   <input type="password" id="re-password" size="90%">
+                   <span class="error" id="re-password-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Gender :</td>
+               <td>
+                   <input type="radio" name="gender" value="Male"><label>Male</label>
+                   <hr>
+                   <input type="radio" name="gender" value="Female"><label>Female</label>
+                   <span class="error" id="gender-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Age :</td>
+               <td>
+                   <input type="text" id="age" size="90%">
+                   <span class="error" id="age-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Phone number</td>
+               <td>
+                   <input type="text" id="phone-number" size="90%">
+                   <span class="error" id="phone-number-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Address</td>
+               <td>
+                   <textarea id="address" cols="74" rows="6"></textarea>
+                   <span class="error" id="address-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>State</td>
+               <td>
+                   <input type="text" id="state" size="90%">
+                   <span class="error" id="state-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Country</td>
+               <td>
+                   <select id="country">
+                       <option value="">Choose your country</option>
+                       <option value="India">India</option>
+                       <option value="Others">Others</option>
+                   </select>
+                   <span class="error" id="country-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td>Languages Known</td>
+               <td>
+                   <input type="checkbox" name="languages" value="English"><label>English</label>
+                   <input type="checkbox" name="languages" value="Kannada"><label>Kannada</label>
+                   <input type="checkbox" name="languages" value="Hindi"><label>Hindi</label>
+                   <input type="checkbox" name="languages" value="Telugu"><label>Telugu</label>
+                   <span class="error" id="languages-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2">
+                   <input type="checkbox" id="declaration"><label>Hereby I declare that all the given instructions are true</label>
+                   <span class="error" id="declaration-error"></span>
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2">Log in to <a href="https://ethnus.com/">ethnus</a> website</td>
+           </tr>
+       </table>
+       <button type="button" id="register-button"><center>Register</center></button>
+   </form>
+   <script src="Task4_8.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+        .error {
+            color: red;
+        }
+        .input-error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <div>
+            Name: <input type="text" name="fname">
+            <span class="error" id="fname-error"></span>
+        </div>
+        <div>
+            Email: <input type="text" name="fmail">
+            <span class="error" id="fmail-error"></span>
+        </div>
+        <div>
+            Website: <input type="text" name="fweb">
+            <span class="error" id="fweb-error"></span>
+        </div>
+        <div>
+            Message: <textarea name="fmes" cols="15" rows="5"></textarea>
+            <span class="error" id="fmes-error"></span>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="Task4_5.js"></script>
+</body>
+</html>

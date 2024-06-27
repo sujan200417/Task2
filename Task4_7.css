@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+.train {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+}
+
+.engine {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+}
+
+.cab {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.body {
+    width: 140px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.chimney {
+    width: 20px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.wheels {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+}
+
+.wheel {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+@keyframes moveTrain {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: calc(100% + 200px);
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
